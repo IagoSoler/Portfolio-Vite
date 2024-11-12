@@ -1,0 +1,75 @@
+#career {
+  max-width: 1200px;
+  margin-right: 15%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.career--text {
+  text-align: justify;
+}
+.career--text h2 {
+  font-size: 2.5em;
+}
+.career--text p,a {
+  font-size: 1.5em;
+}
+.career--image {
+  width: 25%;
+  max-width: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.career--text--link {
+  display: inline-block; 
+  color: turquoise;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid turquoise;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.career--text--link:hover {
+  background-color: turquoise;
+  color: black;
+}
+@-moz-document url-prefix() {
+  .career--image {
+      width: 100%;
+  }
+  @media (max-width: 480px) {
+    .career--image {
+      width: 40%; 
+    }
+  }
+}
+@media (max-width: 768px) {
+
+  #career {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .career--text h2{
+    text-align: center; 
+  }
+  .career--text--link {
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+  }
+}
+@media (max-width:480px){
+  #career {
+    margin-left:5%; 
+    margin-right:5%;
+  }
+  .career--image{
+    width: 50%;
+  }
+}

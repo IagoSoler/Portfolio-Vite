@@ -1,0 +1,143 @@
+:root{
+  --text-primary: #e0e0e0;
+  --accent-color: #64ffda;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(18, 18, 18, 0.95);
+  z-index: 1000;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+/* ---------------------------------------Name--------------------------------------- */
+.navbar--name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  gap: 5px;
+  color: var(--text-primary);
+}
+.navbar--name--image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* ---------------------------------------Botones de navegación--------------------------------------- */
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 60%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  padding: 0.5em;
+  width: 100%;
+  height: 40px;
+}
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+.navbar button:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+.navbar button.active {
+  color: var(--accent-color);
+  font-weight: bold;
+  border: 2px solid var(--accent-color); 
+}
+/* ---------------------------------------Selector de Idioma--------------------------------------- */
+.navbar--language,
+.navbar--contact {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  align-items: center;
+}
+.navbar--language--flag {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.navbar--language--selector {
+  width: 80%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+.navbar--language--selector:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.navbar--language--selector option {
+  background-color: #1a1a1a;
+  color: var(--text-primary);
+  padding: 8px;
+}
+/* ---------------------------------------Redes sociales--------------------------------------- */
+.navbar--contact--linkedin__image {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.navbar--contact--github__image {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar--contact a {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.navbar--contact a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------Media queries--------------------------------------- */
+@media (max-width: 768px) {
+  .navbar ul{
+    width: 100%;
+  }
+  .navbar--name,
+  .navbar--contact {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .navbar--language {
+    display: none;
+  }
+}
+@media (hover: none) {
+  .navbar button:hover {
+    color: var(--text-primary);
+    transform: translateY(0px);
+  }
+  .navbar--contact a:hover {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .navbar button.active {
+    color: var(--accent-color);
+    font-weight: bold;
+    border: 2px solid var(--accent-color); 
+  }
+}

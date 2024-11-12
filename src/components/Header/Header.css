@@ -1,0 +1,70 @@
+#header {
+  max-width: 1200px;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  transition: transform 1.1s ease;
+}
+#header.hidden {
+  transform: translateY(-100%);
+  display: none;
+}
+.header--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.header--container--image {
+  width: 25%;
+  border-radius: 100%;
+}
+.header--container--title {
+  text-align: justify;
+}
+.header--container--title--text {
+  font-size: 3.5em;
+}
+.header--container--subtitle {
+  font-size: 2em;
+}
+.header--chevron__down {
+  position: absolute;
+  bottom: 10%; /* Ajusta según lo necesites */
+  width: 4%;
+}
+@-moz-document url-prefix() {
+  .header--container--image {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  .header--container {
+    flex-direction: column;
+  }
+  .header--container--title h1{
+    text-align: center;
+  }
+  .header--container--image {
+    width: 50%;
+  }
+
+}
+@media (max-width: 480px) {
+  #header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

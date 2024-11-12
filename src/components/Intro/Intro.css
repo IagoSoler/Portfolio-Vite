@@ -1,0 +1,132 @@
+.intro {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,0,52,1) 100%);
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 10; 
+    overflow: hidden;
+}
+
+.intro--title {
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    
+    font-size: 4em;
+    margin-bottom: 100px;   
+}
+.left{
+    animation: slideIn 1s forwards;
+    transform: translateX(-100%);
+}
+.right{
+    animation: slideIn 1s forwards;
+    transform: translateX(100%);
+}
+
+
+.intro--buttons__container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+    margin: 0;
+    opacity: 0;
+
+    margin-top: 100px;
+}
+.entering__up{
+    transform: translateY(200%);
+    animation: slideIn 1s forwards;
+}
+
+.intro--buttons__container--button {
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255); 
+    transition: background-color 0.3s; 
+}
+
+.intro--buttons__container--button:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.intro--button-flag {
+    width: 15px; 
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.exiting__left{
+    opacity: 1;
+    animation: slideOutLeft 1s forwards;
+}
+
+.exiting__right{
+    opacity: 1;
+    animation: slideOutRight 1s forwards;
+}
+
+.exiting__down{
+    opacity: 1;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes slideOutLeft {
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideOutRight {
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+@media (max-width: 768px) {
+    .intro--title {
+        font-size: 2.5em;
+        margin-bottom: 1rem;
+    }
+
+    .intro--buttons__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro--buttons__container--button {
+        width: 220px;
+        padding: 12px 20px;
+    }
+
+    .button-content {
+        font-size: 1rem;
+    }
+}

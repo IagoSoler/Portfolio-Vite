@@ -1,0 +1,73 @@
+#skills {
+  max-width: 1200px;
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+#skills h4 {
+  font-size: 2em;
+}
+
+.skills--grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+/* -------------------------------------------------Tarjeta de habilidad-------------------------------------------------- */
+.skills--card {
+  padding: 15px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills--card h3 {
+  font-size: 1.5em;
+}
+.skills--card p {
+  font-size: 1em;
+}
+.skills--card--image {
+  width: 40%;
+}
+.Gallego,
+.Galician {
+  border-radius: 100%;
+}
+/* -------------------------------------------------Barra de progreso-------------------------------------------------- */
+.skills--progress__bar {
+  width: 80%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.skills--progress__fill {
+  height: 100%;
+  background-color: rgb(0, 128, 128);
+  transition: width 0.5s ease-out;
+}
+/* -------------------------------------------------Media Queries--------------------------------------------------- */
+@media (max-width: 768px) {
+  .skills--card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills--card {
+    width: 40%;
+  }
+}
