@@ -1,6 +1,6 @@
 # Mi Portafolio Web
 
-Este es mi portfolio web, desarrollado como parte de mi formación en el Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web (DAW). Aquí puedes encontrar información sobre mí, mis habilidades, proyectos y formas de contacto.
+Este es mi portfolio web, desarrollado para mostrar mis aptitudes de Desarrollo de Aplicaciones Web (DAW). Aquí puedes encontrar información sobre mí, mis habilidades, proyectos y formas de contacto.
 
 ## Tabla de Contenidos
 
