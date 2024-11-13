@@ -16,7 +16,7 @@ export const spanish={
       title: "Quizzical",
       image: quizzicalCover,
       description: "Solo en ingés. Pequeño proyecto FrontEnd con llamada a API para preguntas estilo Trivia. Creado en React como un componente de la presente aplicación",
-      link: "#/quizzical",
+      link: "/quizzical",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/Quizzical"  
     },
@@ -37,7 +37,7 @@ export const english = {
       title: "Quizzical",
       image: quizzicalCover,
       description: "Small FrontEnd project with API call for trivia-style questions. Created in React as a component of the current application",
-      link: "#/quizzical",
+      link: "/quizzical",
       githubButton: "View in Github",
       githubLink: "https://github.com/IagoSoler/Quizzical" 
     },

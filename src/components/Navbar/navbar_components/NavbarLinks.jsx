@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { scrollToSection, handleScroll } from '../../utils/scrollUtils';
-import { chooseLanguage } from '../../utils/otherUtils';
-import { spanish, english } from '../../data/NavbarData'
+import { scrollToSection, handleScroll } from '../../../utils/scrollUtils';
 
 
-const NavbarLinks = ({ language }) => {
+
+const NavbarLinks = ({ textData }) => {
   const [activeSection, setActiveSection] = useState('');
-  const textData = chooseLanguage(language, english, spanish);
+
 
   useEffect(() => {
     const scrollHandler = handleScroll(setActiveSection);

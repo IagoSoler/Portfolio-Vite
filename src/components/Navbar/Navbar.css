@@ -1,17 +1,27 @@
-:root{
+:root {
   --text-primary: #e0e0e0;
   --accent-color: #64ffda;
+  --bg-color: rgba(18, 18, 18, 0.95);
 }
+
 .navbar {
   position: sticky;
   top: 0;
-  background-color: rgba(18, 18, 18, 0.95);
+  background-color: var(--bg-color);
   z-index: 1000;
   height: 55px;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
+.navbar--desktop{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
 /* ---------------------------------------Name--------------------------------------- */
 .navbar--name {
   display: flex;
@@ -26,6 +36,34 @@
   height: 30px;
   border-radius: 50%;
 }
+/* ---------------------------------------Barra móviles--------------------------------------- */
+.navbar--menu--button {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.navbar--mobile {
+  display: none;
+  position: fixed;
+  top: 55px;
+  width: 60%;
+  
+  right: 0;
+  background-color: black;
+  padding: 1rem;
+  transform: translatey(-200%);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar--name--mobile{
+  display: none;
+}
+.navbar--mobile.show {
+  transform: translateX(0);
+}
+
 /* ---------------------------------------Botones de navegación--------------------------------------- */
 .navbar ul {
   display: flex;
@@ -113,18 +151,53 @@
 
 /* ---------------------------------------Media queries--------------------------------------- */
 @media (max-width: 768px) {
-  .navbar ul{
+  .navbar--desktop {
+    display: none;
+  }
+
+  .navbar--menu--button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 50px;
+    max-width: 50%;
+  }
+
+  .navbar--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbar--name--mobile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-primary);
+    justify-content: left;
+    margin-left: 10px;
+    width: 50%;
+  }
+  .navbar--mobile ul {
+    flex-direction: column;
     width: 100%;
   }
-  .navbar--name,
+
+  .navbar--mobile li {
+    width: 100%;
+    text-align: center;
+  }
+
+   .navbar--language{
+    width: 50%;
+   }
   .navbar--contact {
-    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
   }
-}
-@media (max-width: 480px) {
-  .navbar--language {
-    display: none;
-  }
+
 }
 @media (hover: none) {
   .navbar button:hover {

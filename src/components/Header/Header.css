@@ -29,6 +29,7 @@
   text-align: justify;
 }
 .header--container--title--text {
+  line-height: 1em;
   font-size: 3.5em;
 }
 .header--container--subtitle {
@@ -36,7 +37,7 @@
 }
 .header--chevron__down {
   position: absolute;
-  bottom: 10%; /* Ajusta según lo necesites */
+  bottom: 10%;
   width: 4%;
 }
 @-moz-document url-prefix() {
