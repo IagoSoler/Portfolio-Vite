@@ -1,5 +1,6 @@
 import encuestasCover from '../assets/projects_images/encuestas_cover.PNG'
 import quizzicalCover from '../assets/projects_images/quizzical_cover.PNG'
+import terniCover from '../assets/projects_images/terni_cover.PNG'
 
 export const spanish={
   title:"Algunos de mis proyectos e ideas:",
@@ -11,6 +12,14 @@ export const spanish={
       link: "/encuestas/views/login.php",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/Creador-de-encuestas"
+    },
+    {
+      title: "Terni Lapilli",
+      image: terniCover,
+      description: "Tres en raya romano. Creado con interección entre React y BBDD SQL mediante PHP",
+      link: "/terni",
+      githubButton: "Ver en Github",
+      githubLink: "https://github.com/IagoSoler/terni-lapilli"  
     },
     {
       title: "Quizzical",
@@ -32,6 +41,14 @@ export const english = {
       link: "/encuestas/views/login.php",
       githubButton: "View in Github",
       githubLink: "https://github.com/IagoSoler/Creador-de-encuestas"
+    },
+    {
+      title: "Terni Lapilli",
+      image: terniCover,
+      description: "Only in spanish. Roman tic tac toe version. Made in React and PHP interacting with a SQL DB ",
+      link: "/terni",
+      githubButton: "Ver en Github",
+      githubLink: "https://github.com/IagoSoler/terni-lapilli"  
     },
     {
       title: "Quizzical",
