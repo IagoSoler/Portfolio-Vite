@@ -63,7 +63,13 @@
 .navbar--mobile.show {
   transform: translateX(0);
 }
+.navbar--mobile--over__layout{
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+  background-color: transparent;
 
+}
 /* ---------------------------------------Botones de navegación--------------------------------------- */
 .navbar ul {
   display: flex;

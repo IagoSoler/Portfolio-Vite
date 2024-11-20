@@ -9,12 +9,13 @@ const NavbarMobile = ({ textData, language, setLanguage, isMenuOpen, setIsMenuOp
 
     return (
         <>
+            {isMenuOpen && <div className='navbar--mobile--over__layout' onClick={() => setIsMenuOpen(false)}></div>}
             <div className={`navbar--name--mobile ${isMenuOpen ? 'show' : ''}`}>
                 <img className="navbar--name--image" src={textData.myPhoto} alt="myPhoto" />
                 <p>Iago Soler Veira</p>
             </div>
 
-            
+
             <button
                 className="navbar--menu--button"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
