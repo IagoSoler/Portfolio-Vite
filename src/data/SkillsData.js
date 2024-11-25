@@ -8,7 +8,13 @@ import gitIcon from '../assets/skills_images/Git_icon.PNG';
 import spainIcon from '../assets/skills_images/Spain_icon.PNG';
 import ukIcon from '../assets/skills_images/UK_icon.PNG';
 import galiciaIcon from '../assets/skills_images/Galicia_icon.PNG';
+import chevronLeft from '../assets/skills_images/chevronLeft.SVG';
+import chevronRight from '../assets/skills_images/chevronRight.SVG';
 
+export const chevrons = {
+  left: chevronLeft,
+  right: chevronRight
+}
 
 export const spanish = {
   title:"Habilidades relevantes:",
