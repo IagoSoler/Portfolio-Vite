@@ -13,6 +13,7 @@
     bottom: 0; 
     z-index: 10; 
     overflow: hidden;
+    gap:10%
 }
 
 .intro--title {
@@ -21,9 +22,26 @@
     text-align: center;
     margin: 0;
     opacity: 0;
-    
-    font-size: 4em;
+    color: rgb(31,0,52,1);
+    mix-blend-mode: screen;
+    text-shadow: 
+        4px 4px 50px turquoise,
+        -4px -4px 50px turquoise,
+        4px -4px 50px turquoise,
+        -4px 4px 50px turquoise,
+        0 0 20px turquoise;
+    font-size: 5em;
     margin-bottom: 100px;   
+    cursor: pointer;  /* Añadido para indicar que es clickeable */
+   }
+.intro--title:hover {
+
+    text-shadow: 
+        4px 4px 50px rgb(211, 64, 224),
+        -4px -4px 50px rgb(211, 64, 224),
+        4px -4px 50px rgb(211, 64, 224),
+        -4px 4px 50px rgb(211, 64, 224),
+        0 0 20px rgb(211, 64, 224);
 }
 .left{
     animation: slideIn 1s forwards;
@@ -35,7 +53,7 @@
 }
 
 
-.intro--buttons__container {
+/* .intro--buttons__container {
     display: flex;
     flex-direction: row;
     gap: 100px; 
@@ -67,7 +85,7 @@
 
 .intro--button-flag {
     width: 15px; 
-}
+} */
 
 @keyframes slideIn {
     to {

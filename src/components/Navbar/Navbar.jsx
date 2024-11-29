@@ -8,7 +8,7 @@ import { spanish, english } from '../../data/NavbarData'
 
 
 
-const Navbar = ({ setLanguage, language }) => {
+const Navbar = ({ setLanguage, language, setIsVisible }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const textData = chooseLanguage(language, english, spanish);
 
@@ -21,6 +21,7 @@ const Navbar = ({ setLanguage, language }) => {
         textData={textData}
         language={language}
         setLanguage={setLanguage}
+        setIsVisible={setIsVisible}
       />
 
      
@@ -30,6 +31,7 @@ const Navbar = ({ setLanguage, language }) => {
         setLanguage={setLanguage}
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
+        setIsVisible={setIsVisible}
  
       />
 

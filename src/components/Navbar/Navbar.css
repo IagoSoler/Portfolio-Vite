@@ -30,11 +30,16 @@
   width: 20%;
   gap: 5px;
   color: var(--text-primary);
+  cursor: pointer;
 }
 .navbar--name--image {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.navbar--name p:hover,.navbar--name--mobile p:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
 }
 /* ---------------------------------------Barra móviles--------------------------------------- */
 .navbar--menu--button {
@@ -59,8 +64,9 @@
 }
 .navbar--name--mobile{
   display: none;
+  cursor: pointer;
 }
-.navbar--mobile.show {
+.show {
   transform: translateX(0);
 }
 .navbar--mobile--over__layout {

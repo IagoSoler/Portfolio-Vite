@@ -9,6 +9,7 @@
   height: 100dvh;
   position: relative;
   transition: transform 1.1s ease;
+  animation: headerFadeIn 1.5s ease;
 }
 #header.hidden {
   transform: translateY(-100%);
@@ -39,6 +40,14 @@
   position: absolute;
   bottom: 10%;
   width: 4%;
+}
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-moz-document url-prefix() {
   .header--container--image {

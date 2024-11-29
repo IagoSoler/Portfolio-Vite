@@ -1,3 +1,5 @@
+
+import interestCover from '../assets/projects_images/calculator_cover.PNG'
 import encuestasCover from '../assets/projects_images/encuestas_cover.PNG'
 import quizzicalCover from '../assets/projects_images/quizzical_cover.PNG'
 import terniCover from '../assets/projects_images/terni_cover.PNG'
@@ -5,6 +7,14 @@ import terniCover from '../assets/projects_images/terni_cover.PNG'
 export const spanish={
   title:"Algunos de mis proyectos e ideas:",
   projects:[
+    {
+      title: "Calculadora de intereses",
+      image: interestCover,
+      description: "Solo en ingés. Calculadora de intereses compuestos. Creado en React usando Recharts",
+      link: "/interest-calculator",
+      githubButton: "Ver en Github",
+      githubLink: "https://github.com/IagoSoler/interest-calculator"  
+    },
     {
       title: "Creador de encuestas",
       image: encuestasCover,
@@ -34,6 +44,14 @@ export const spanish={
 export const english = {
   title: "Some of my projects and ideas:",
   projects: [
+    {
+      title: "Interest Calculator",
+      image: interestCover,
+      description: " Compound Interest Calculator. Created using React and Recharts",
+      link: "/interest-calculator",
+      githubButton: "View in Github",
+      githubLink: "https://github.com/IagoSoler/interest-calculator"  
+    },
     {
       title: "Survey Maker",
       image: encuestasCover,

@@ -3,14 +3,14 @@ import { Menu, X } from 'lucide-react';
 import NavbarLinks from './NavbarLinks';
 import NavbarContact from './NavbarContact';
 import NavbarLanguage from './NavbarLanguage';
+import {resetToHeader}  from '../../../utils/scrollUtils';
 
-
-const NavbarMobile = ({ textData, language, setLanguage, isMenuOpen, setIsMenuOpen }) => {
+const NavbarMobile = ({ textData, language, setLanguage, isMenuOpen, setIsMenuOpen, setIsVisible  }) => {
 
     return (
         <>
             {isMenuOpen && <div className='navbar--mobile--over__layout' onClick={() => setIsMenuOpen(false)}></div>}
-            <div className={`navbar--name--mobile ${isMenuOpen ? 'show' : ''}`}>
+            <div className="navbar--name--mobile" onClick={()=>resetToHeader(setIsVisible )}>
                 <img className="navbar--name--image" src={textData.myPhoto} alt="myPhoto" />
                 <p>Iago Soler Veira</p>
             </div>

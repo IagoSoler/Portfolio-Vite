@@ -33,7 +33,6 @@ export const handleScroll = (setActiveSection) => {
 };
 export const handleFirstScroll = (
   setIsVisible,
-  isVisible,
   offset = 55
 ) => {
     setTimeout(() => {
@@ -43,3 +42,10 @@ export const handleFirstScroll = (
       setIsVisible(false);
     }, 1000);
 };
+
+export const resetToHeader = (setIsVisible)=>{
+setIsVisible(true);
+setTimeout(() => {
+  scrollToSection('header',0)
+}, 10);
+}

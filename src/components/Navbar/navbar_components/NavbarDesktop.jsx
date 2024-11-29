@@ -2,12 +2,13 @@ import React from 'react'
 import NavbarLinks from './NavbarLinks';
 import NavbarContact from './NavbarContact';
 import NavbarLanguage from './NavbarLanguage';
+import {resetToHeader}  from '../../../utils/scrollUtils';
 
 
-const NavbarDesktop = ({ textData, language, setLanguage }) => {
+const NavbarDesktop = ({ textData, language, setLanguage, setIsVisible  }) => {
     return (
         <div className="navbar--desktop">
-            <div className="navbar--name">
+            <div className="navbar--name" onClick={()=>resetToHeader(setIsVisible )}>
                 <img className="navbar--name--image" src={textData.myPhoto} alt="myPhoto" />
                 <p>Iago Soler Veira</p>
             </div>

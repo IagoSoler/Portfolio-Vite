@@ -1,10 +1,10 @@
 
 import React from 'react'
-const SkillsCard = ({ array, title }) => {
+const SkillsCard = ({ array, title,animation }) => {
   return (
-    <div className="skills-list">
+    <div className="skills-list" >
       <h4 className="skills__subtitle">{title}</h4>
-      <div className="skills-list__grid">
+      <div className={`skills-list__grid ${animation}`}>
         {array.map(item => (
           <div className="skills-card" key={item.title}>
             <h3 className="skills-card__title">{item.title}</h3>

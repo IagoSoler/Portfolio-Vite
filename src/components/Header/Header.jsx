@@ -8,14 +8,13 @@ import { spanish, english } from '../../data/HeaderData';
 
 
 
-const Header = ({ language }) => {
-  const [isVisible, setIsVisible] = useState(true);
+const Header = ({ language,isVisible, setIsVisible }) => {
   const textData = chooseLanguage(language, english, spanish);
 
   useEffect(() => {
     const handleScroll = (e) => {
       if (e.wheelDeltaY < 0 && isVisible) {
-        handleFirstScroll(setIsVisible, isVisible,55);
+        handleFirstScroll(setIsVisible,55);
       }
     }
     document.addEventListener('wheel', handleScroll);
@@ -34,7 +33,7 @@ const Header = ({ language }) => {
 
         </div>
       </div>
-      <img onClick={() => handleFirstScroll(setIsVisible, isVisible,55)} className='header--chevron__down' src={chevronDown} alt="chevronDown" />
+      <img onClick={() => handleFirstScroll(setIsVisible,55)} className='header--chevron__down' src={chevronDown} alt="chevronDown" />
     </div>
 
   )

@@ -5,6 +5,7 @@ import { Intro, Header, Navbar, About, Skills, Projects, Contact, Quizzical, Des
 
 function App() {
   const [language, setLanguage] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <Router>
@@ -16,8 +17,9 @@ function App() {
               {!language && <Intro setLanguage={setLanguage} />}
               {language && (
                 <div className="App">
-                  <Header language={language}/>
-                  <Navbar setLanguage={setLanguage} language={language} />
+                  <Header language={language} isVisible={isVisible}
+                  setIsVisible={setIsVisible}/>
+                  <Navbar setLanguage={setLanguage} language={language} setIsVisible={setIsVisible} />
                   <About language={language}/>
                   <Career language={language}/>
                   <Skills language={language} />
