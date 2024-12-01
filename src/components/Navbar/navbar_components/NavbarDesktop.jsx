@@ -5,10 +5,10 @@ import NavbarLanguage from './NavbarLanguage';
 import {resetToHeader}  from '../../../utils/scrollUtils';
 
 
-const NavbarDesktop = ({ textData, language, setLanguage, setIsVisible  }) => {
+const NavbarDesktop = ({ textData, language, setLanguage, setAreVisible  }) => {
     return (
         <div className="navbar--desktop">
-            <div className="navbar--name" onClick={()=>resetToHeader(setIsVisible )}>
+            <div className="navbar--name" onClick={()=>resetToHeader(setAreVisible )}>
                 <img className="navbar--name--image" src={textData.myPhoto} alt="myPhoto" />
                 <p>Iago Soler Veira</p>
             </div>

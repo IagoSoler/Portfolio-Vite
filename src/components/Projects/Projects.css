@@ -1,6 +1,11 @@
-#projects {
+#projects{
   max-width: 1200px;
-  margin-top: 5%;
+  width: 100%;
+  
+
+}
+.projects {
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;

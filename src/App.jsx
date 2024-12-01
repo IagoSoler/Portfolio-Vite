@@ -5,7 +5,14 @@ import { Intro, Header, Navbar, About, Skills, Projects, Contact, Quizzical, Des
 
 function App() {
   const [language, setLanguage] = useState("");
-  const [isVisible, setIsVisible] = useState(true);
+  const [areVisible,setAreVisible] = useState({
+    header:true,
+    about:false,
+    career:false,
+    skills:false,
+    description:false,
+    projects:false
+  })
 
   return (
     <Router>
@@ -17,15 +24,14 @@ function App() {
               {!language && <Intro setLanguage={setLanguage} />}
               {language && (
                 <div className="App">
-                  <Header language={language} isVisible={isVisible}
-                  setIsVisible={setIsVisible}/>
-                  <Navbar setLanguage={setLanguage} language={language} setIsVisible={setIsVisible} />
-                  <About language={language}/>
-                  <Career language={language}/>
-                  <Skills language={language} />
-                  <Description language={language}/>
-                  <Projects language={language} />
-                  <Contact language={language} />
+                  <Header language={language} isVisible={areVisible.header} setIsVisible={(visible)=>setAreVisible(prev=>({...prev,header:visible}))}/>
+                  <Navbar setLanguage={setLanguage} language={language} setAreVisible={setAreVisible} />
+                  <About language={language} isVisible={areVisible.about} setIsVisible={()=>setAreVisible(prev=>({...prev,about:!prev.about}))}/>
+                  <Career language={language} isVisible={areVisible.career} setIsVisible={()=>setAreVisible(prev=>({...prev,career:!prev.career}))}/>
+                  <Skills language={language} isVisible={areVisible.skills} setIsVisible={()=>setAreVisible(prev=>({...prev,skills:!prev.skills}))} />
+                  <Description language={language} isVisible={areVisible.description} setIsVisible={()=>setAreVisible(prev=>({...prev,description:!prev.description}))}/>
+                  <Projects language={language} isVisible={areVisible.projects} setIsVisible={()=>setAreVisible(prev=>({...prev,projects:!prev.projects}))} />
+                  <Contact language={language}  />
                  
                 </div>
               )}

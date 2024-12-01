@@ -1,6 +1,11 @@
 #skills {
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
+}
+.skills {
+  margin-top: 10%;
+  max-width: 1200px;
+  width: 100%;
   margin: 5% auto;
   position: relative;
 }
@@ -57,22 +62,15 @@
   gap: 30px;
   margin-bottom: 10%;
   transition: transform 0.5s ease;
-  animation: fadeIn 0.5s ease;
+
 }
 .slide-left {
-  transform: translateX(-50%);
+  transform: translateX(-100%);
 }
 .slide-right {
-  transform: translateX(50%);
+  transform: translateX(100%);
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0;
-  }
-}
+
 /* Skills Navigation
    ========================================================================== */
 .skills-nav__chevron {
@@ -158,7 +156,7 @@
 }
 
 @media (max-width: 768px) {
-  #skills {
+  .skills {
     width: 90%;
   }
   .skills-card {

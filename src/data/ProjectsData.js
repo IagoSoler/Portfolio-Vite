@@ -5,7 +5,7 @@ import quizzicalCover from '../assets/projects_images/quizzical_cover.PNG'
 import terniCover from '../assets/projects_images/terni_cover.PNG'
 
 export const spanish={
-  title:"Algunos de mis proyectos e ideas:",
+  title:"Algunos de mis proyectos e ideas",
   projects:[
     {
       title: "Calculadora de intereses",
@@ -26,7 +26,7 @@ export const spanish={
     {
       title: "Terni Lapilli",
       image: terniCover,
-      description: "Tres en raya romano. Creado con interección entre React y BBDD SQL mediante PHP",
+      description: "Tres en raya romano. Creado con interacción entre React y BBDD SQL mediante PHP",
       link: "/terni",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/terni-lapilli"  
@@ -42,7 +42,7 @@ export const spanish={
   ]
 }
 export const english = {
-  title: "Some of my projects and ideas:",
+  title: "Some of my projects and ideas",
   projects: [
     {
       title: "Interest Calculator",

@@ -1,4 +1,4 @@
-export const scrollToSection = (sectionId, offset = 55) => {
+export const scrollToSection = (sectionId, offset = 0) => {
   const element = document.getElementById(sectionId);
   if (element) {
     const position =
@@ -33,7 +33,7 @@ export const handleScroll = (setActiveSection) => {
 };
 export const handleFirstScroll = (
   setIsVisible,
-  offset = 55
+  offset 
 ) => {
     setTimeout(() => {
       scrollToSection("about", offset);
@@ -43,8 +43,15 @@ export const handleFirstScroll = (
     }, 1000);
 };
 
-export const resetToHeader = (setIsVisible)=>{
-setIsVisible(true);
+export const resetToHeader = (setAreVisible)=>{
+  setAreVisible({
+    header:true,
+    about:false,
+    career:false,
+    skills:false,
+    description:false,
+    projects:false
+  });
 setTimeout(() => {
   scrollToSection('header',0)
 }, 10);

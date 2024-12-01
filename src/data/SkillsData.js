@@ -17,7 +17,7 @@ export const chevrons = {
 }
 
 export const spanish = {
-  title:"Habilidades relevantes:",
+  title:"Habilidades relevantes",
   languagesTitle: "Mis idiomas:",
   backendTitle: "Backend y otras tecnologías:",
   frontend: [
@@ -77,7 +77,7 @@ export const spanish = {
   }  ]
 }
 export const english = {
-  title:"Relevant skills:",
+  title:"Relevant skills",
   languagesTitle: "My languages:",
   backendTitle: "Backend and other technologies:",
   frontend: [

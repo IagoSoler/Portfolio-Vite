@@ -2,14 +2,15 @@ import React from 'react'
 import './Projects.css'
 import { spanish, english } from '../../data/ProjectsData'
 import { chooseLanguage } from '../../utils/otherUtils';
+import { Dropdown } from '../Dropdown/Dropdown';
 
-const Projects = ({ language }) => {
+const Projects = ({ language, isVisible, setIsVisible }) => {
   const textData = chooseLanguage(language, english, spanish);
   const projectsElements = () => {
 
     return textData.projects.map(item => (
       <div className='projects--grid--project' key={item.title}>
-        
+
         <div className='projects--grid--project--card'
           onClick={() => window.open(item.link, '_blank')} >
           <h3>{item.title}</h3>
@@ -27,10 +28,13 @@ const Projects = ({ language }) => {
 
   return (
     <div id="projects">
-      <h2>{textData.title}</h2>
-      <div className='projects--grid'>
-        {projectsElements()}
-      </div>
+      <Dropdown title={textData.title} isVisible={isVisible} setIsVisible={setIsVisible} />
+
+      {isVisible && <div className={`projects ${isVisible ? 'section--active' : ''}`}>
+        <div className='projects--grid'>
+          {projectsElements()}
+        </div>
+      </div>}
     </div>
   );
 }

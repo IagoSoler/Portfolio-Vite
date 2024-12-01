@@ -5,12 +5,12 @@ import NavbarContact from './NavbarContact';
 import NavbarLanguage from './NavbarLanguage';
 import {resetToHeader}  from '../../../utils/scrollUtils';
 
-const NavbarMobile = ({ textData, language, setLanguage, isMenuOpen, setIsMenuOpen, setIsVisible  }) => {
+const NavbarMobile = ({ textData, language, setLanguage, isMenuOpen, setIsMenuOpen, setAreVisible  }) => {
 
     return (
         <>
             {isMenuOpen && <div className='navbar--mobile--over__layout' onClick={() => setIsMenuOpen(false)}></div>}
-            <div className="navbar--name--mobile" onClick={()=>resetToHeader(setIsVisible )}>
+            <div className="navbar--name--mobile" onClick={()=>resetToHeader(setAreVisible )}>
                 <img className="navbar--name--image" src={textData.myPhoto} alt="myPhoto" />
                 <p>Iago Soler Veira</p>
             </div>
