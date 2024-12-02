@@ -1,8 +1,12 @@
 #contact {
-  padding: 10px 0;
+  padding: 0px 0px 10px;
   width: 100%;
-  margin-top: 10%;
   background-color: black;
+  z-index: 10;
+}
+.contact-margin--filler {
+  height: 10vh;
+  background: linear-gradient(90deg, rgb(4, 2, 56) 0%, rgb(47, 2, 68) 100%);
 }
 .contact {
   display: flex;
@@ -69,7 +73,7 @@
   margin-left: 5px;
   height: 60%;
   gap: 5px;
-  
+
   padding: 3px;
 }
 .contact--email--text {
@@ -79,7 +83,6 @@
   width: 20px;
 }
 .contact--email--button {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,9 +141,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-  .contact--nav  {
+  .contact--nav {
     display: none;
   }
   .contact--numberandemail {
@@ -174,7 +176,7 @@
     min-width: 50px;
     margin-left: 20px;
   }
-  .footer{
+  .footer {
     margin-top: 5%;
     text-align: center;
   }

@@ -13,6 +13,7 @@ const Contact = ({ language }) => {
   const textData = chooseLanguage(language, english, spanish);
   return (
     <div id="contact">
+      <div className='contact-margin--filler'></div>
       <div className="contact">
 
         <div className='contact--nav'>

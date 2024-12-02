@@ -4,14 +4,18 @@
   flex-direction: row;
   justify-content: center;
   max-width: 1200px;
-  margin-top: 10%;
+  width: 95%;
+  margin-top: 5%;
   border: 2px solid transparent;
   gap: 10px;
   color: #40e0d0;
   cursor: pointer;
 }
-.dropdown:hover {
-  border: 2px solid turquoise;
+
+@media (hover: hover) {
+  .dropdown:hover:not(.dropdown--active) {
+    border: 2px solid turquoise;
+  }
 }
 
 .dropdown--chevron {
