@@ -16,12 +16,23 @@ const Header = ({ language, isVisible, setIsVisible }) => {
       if (e.wheelDeltaY < 0 && isVisible) {
         handleFirstScroll(setIsVisible, 55);
       }
-    }
+    };
+
+    const handleTouchMove = (e) => {
+      if (isVisible) {
+        e.preventDefault();
+      }
+    };
+
     document.addEventListener('wheel', handleScroll);
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
     return () => {
       document.removeEventListener('wheel', handleScroll);
+      document.removeEventListener('touchmove', handleTouchMove);
     };
   }, [isVisible]);
+
+  
   return (
     <div id='header' className={isVisible ? '' : 'hidden'}>
       <div className='header--layout'>

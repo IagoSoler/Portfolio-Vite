@@ -14,9 +14,10 @@
   position: fixed;
   top: 0;
   left: 0;
-z-index: 5;
+  z-index: 5;
   transition: transform 1.1s ease;
   animation: headerFadeIn 1.5s ease;
+  gap:10%
 }
 #header.hidden {
   transform: translateY(-100%);
@@ -45,7 +46,7 @@ z-index: 5;
 }
 .header--chevron__down {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   width: 4%;
 }
 @keyframes headerFadeIn {
@@ -78,7 +79,6 @@ z-index: 5;
     width: 50%;
   }
   .header--chevron__down {
-
     width: 15%;
   }
 }
@@ -88,7 +88,6 @@ z-index: 5;
     margin-right: 5%;
   }
   .header--chevron__down {
-  
     width: 20%;
   }
 }

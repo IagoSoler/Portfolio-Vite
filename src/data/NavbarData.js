@@ -17,7 +17,7 @@ export const spanish={
     navButtonProjects:"Proyectos"
 }
 export const english={
-    myphoto:myPhoto,
+    myPhoto:myPhoto,
     githubLogo:githubLogo,
     linkedinLogo:linkedinLogo,
     flagSrc:englishFlag,

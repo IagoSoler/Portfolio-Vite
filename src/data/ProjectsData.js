@@ -5,12 +5,15 @@ import quizzicalCover from '../assets/projects_images/quizzical_cover.PNG'
 import terniCover from '../assets/projects_images/terni_cover.PNG'
 
 export const spanish={
-  title:"Algunos de mis proyectos e ideas",
+  title:"Algunos Proyectos e Ideas",
   projects:[
     {
       title: "Calculadora de intereses",
       image: interestCover,
-      description: "Solo en ingés. Calculadora de intereses compuestos. Creado en React usando Recharts",
+      description: "Solo en ingés. Calculadora de intereses con varias opciones de capitalización",
+      tools: [
+        "Recharts", "HTML", "CSS", "React", "JavaScript" 
+      ],
       link: "/interest-calculator",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/interest-calculator"  
@@ -18,7 +21,10 @@ export const spanish={
     {
       title: "Creador de encuestas",
       image: encuestasCover,
-      description: "Creador de encuestas online. BackEnd. Hecha con HTML, JavaScript y PHP",
+      description: "Creador de encuestas online.Centrado en BackEnd.",
+      tools: [
+        "PHP","MySQL","HTML", "CSS", "JavaScript"
+      ],
       link: "/encuestas/views/login.php",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/Creador-de-encuestas"
@@ -26,7 +32,10 @@ export const spanish={
     {
       title: "Terni Lapilli",
       image: terniCover,
-      description: "Tres en raya romano. Creado con interacción entre React y BBDD SQL mediante PHP",
+      description: "Tres en raya romano. Modo soliario y online",
+      tools: [
+        "PHP","MySQL","HTML", "CSS", "React", "JavaScript"
+      ],
       link: "/terni",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/terni-lapilli"  
@@ -34,7 +43,10 @@ export const spanish={
     {
       title: "Quizzical",
       image: quizzicalCover,
-      description: "Solo en ingés. Pequeño proyecto FrontEnd con llamada a API para preguntas estilo Trivia. Creado en React como un componente de la presente aplicación",
+      description: "Solo en ingés. Pequeño proyecto FrontEnd con llamada a API para preguntas estilo Trivia.",
+      tools: [
+        "HTML", "CSS", "React", "JavaScript"
+      ],
       link: "/quizzical",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/Quizzical"  
@@ -42,20 +54,26 @@ export const spanish={
   ]
 }
 export const english = {
-  title: "Some of my projects and ideas",
+  title: "Some Projects and Ideas",
   projects: [
     {
       title: "Interest Calculator",
       image: interestCover,
-      description: " Compound Interest Calculator. Created using React and Recharts",
+      description: "Interest calculator with various capitalization options",
+      tools: [
+        "Recharts", "HTML", "CSS", "React", "JavaScript" 
+      ],
       link: "/interest-calculator",
       githubButton: "View in Github",
       githubLink: "https://github.com/IagoSoler/interest-calculator"  
     },
     {
-      title: "Survey Maker",
+      title: "Survey Creator",
       image: encuestasCover,
-      description: "Only in spanish. Online survey creator. BackEnd. Made with HTML, JavaScript, and PHP",
+      description: "Online survey creator. Backend focused.",
+      tools: [
+        "PHP","MySQL","HTML", "CSS", "JavaScript"
+      ],
       link: "/encuestas/views/login.php",
       githubButton: "View in Github",
       githubLink: "https://github.com/IagoSoler/Creador-de-encuestas"
@@ -63,18 +81,24 @@ export const english = {
     {
       title: "Terni Lapilli",
       image: terniCover,
-      description: "Only in spanish. Roman tic tac toe version. Made in React and PHP interacting with a SQL DB ",
+      description: "Roman Tic-tac-toe. Single player and online mode",
+      tools: [
+        "PHP","MySQL","HTML", "CSS", "React", "JavaScript"
+      ],
       link: "/terni",
-      githubButton: "Ver en Github",
+      githubButton: "View in Github",
       githubLink: "https://github.com/IagoSoler/terni-lapilli"  
     },
     {
       title: "Quizzical",
       image: quizzicalCover,
-      description: "Small FrontEnd project with API call for trivia-style questions. Created in React as a component of the current application",
+      description: "Small Frontend project with API call for Trivia style questions.",
+      tools: [
+        "HTML", "CSS", "React", "JavaScript"
+      ],
       link: "/quizzical",
       githubButton: "View in Github",
-      githubLink: "https://github.com/IagoSoler/Quizzical" 
+      githubLink: "https://github.com/IagoSoler/Quizzical"  
     },
   ]
 }

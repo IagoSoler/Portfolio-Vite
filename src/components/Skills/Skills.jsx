@@ -44,27 +44,14 @@ const Skills = ({ language, isVisible, setIsVisible }) => {
       {isVisible && <section className={`skills ${isVisible ? 'section--active' : ''}`}>
 
         <div className="skills__container">
-          <div className="skills__navigation">
-            <img
-              onClick={() => operation("-")}
-              className="skills-nav__chevron"
-              src={chevrons.left}
-              alt="chevron left"
-            />
-          </div>
-          <div className="skills__content">
-            {selector === 1 && <SkillsCard array={textData.languages} title={textData.languagesTitle} animation={animation} />}
-            {selector === 2 && <SkillsCard array={textData.frontend} title="Frontend" animation={animation} />}
-            {selector === 3 && <SkillsCard array={textData.backend} title={textData.backendTitle} animation={animation} />}
-          </div>
-          <div className="skills__navigation">
-            <img
-              onClick={() => operation("+")}
-              className="skills-nav__chevron"
-              src={chevrons.right}
-              alt="chevron right"
-            />
-          </div>
+
+          
+
+            {selector === 1 && <SkillsCard array={textData.languages} title={textData.languagesTitle} animation={animation} chevrons={chevrons} operation={operation} />}
+            {selector === 2 && <SkillsCard array={textData.frontend} title="Frontend" animation={animation} chevrons={chevrons} operation={operation} />}
+            {selector === 3 && <SkillsCard array={textData.backend} title={textData.backendTitle} animation={animation} chevrons={chevrons} operation={operation} />}
+
+
         </div>
       </section>}
     </section>
