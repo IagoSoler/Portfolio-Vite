@@ -1,0 +1,19 @@
+.projects--grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
+
+
+.projects--card--github__link:hover .projects--project--card--button {
+  display: block;
+}
+.projects--card--github__link:hover .projects--project--card--github__image {
+  display: none;
+}
+@media (max-width: 768px) {
+  .projects--grid {
+    display: none;
+  }
+}

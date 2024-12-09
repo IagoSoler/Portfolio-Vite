@@ -3,6 +3,13 @@ import interestCover from '../assets/projects_images/calculator_cover.PNG'
 import encuestasCover from '../assets/projects_images/encuestas_cover.PNG'
 import quizzicalCover from '../assets/projects_images/quizzical_cover.PNG'
 import terniCover from '../assets/projects_images/terni_cover.PNG'
+import chevronLeft from '../assets/skills_images/chevronLeft.SVG';
+import chevronRight from '../assets/skills_images/chevronRight.SVG';
+
+export const chevrons = {
+  left: chevronLeft,
+  right: chevronRight
+}
 
 export const spanish={
   title:"Algunos Proyectos e Ideas",
@@ -32,7 +39,7 @@ export const spanish={
     {
       title: "Terni Lapilli",
       image: terniCover,
-      description: "Tres en raya romano. Modo soliario y online",
+      description: "Tres en raya romano. Modo solitario y online",
       tools: [
         "PHP","MySQL","HTML", "CSS", "React", "JavaScript"
       ],
@@ -70,7 +77,7 @@ export const english = {
     {
       title: "Survey Creator",
       image: encuestasCover,
-      description: "Online survey creator. Backend focused.",
+      description: "Spanish only. Online survey creator. Backend focused.",
       tools: [
         "PHP","MySQL","HTML", "CSS", "JavaScript"
       ],
@@ -81,7 +88,7 @@ export const english = {
     {
       title: "Terni Lapilli",
       image: terniCover,
-      description: "Roman Tic-tac-toe. Single player and online mode",
+      description: "Spanish only. Roman Tic-tac-toe. Single player and online mode",
       tools: [
         "PHP","MySQL","HTML", "CSS", "React", "JavaScript"
       ],
